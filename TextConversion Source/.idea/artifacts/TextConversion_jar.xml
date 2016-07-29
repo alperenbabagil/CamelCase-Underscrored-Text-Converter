@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TextConversion:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TextConversion_jar</output-path>
+    <root id="archive" name="TextConversion.jar">
+      <element id="module-output" name="CamelCase Underscored Text Converter" />
+      <element id="extracted-dir" path="C:/Apache/lib/derby.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Apache/lib/derbyclient.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

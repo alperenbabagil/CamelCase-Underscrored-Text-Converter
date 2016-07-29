@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller" fx:id="anchorPane">
+   <children>
+   
+       <!--<fx:define>-->
+           <!--<ToggleGroup fx:id="cFrom"/>-->
+       <!--</fx:define>-->
+       <!--<fx:define>-->
+           <!--<ToggleGroup fx:id="cTo"/>-->
+       <!--</fx:define>-->
+   
+       <Label layoutX="14.0" layoutY="14.0" text="Convert From" />
+   
+       <RadioButton fx:id="cFromCamelCase" layoutX="147.0" layoutY="14.0" mnemonicParsing="false" text="Camel Case">
+         <toggleGroup>
+            <ToggleGroup fx:id="cFrom" />
+         </toggleGroup>
+      </RadioButton>
+       <RadioButton fx:id="cFromUnderScored" layoutX="267.0" layoutY="14.0" mnemonicParsing="false" text="Underscored " toggleGroup="$cFrom" />
+       <RadioButton fx:id="cFromNormalText" layoutX="395.0" layoutY="14.0" mnemonicParsing="false" text="Normal Text" toggleGroup="$cFrom" />
+   
+       <RadioButton fx:id="cToNormalText" layoutX="395.0" layoutY="52.0" mnemonicParsing="false" text="Normal Text">
+         <toggleGroup>
+            <ToggleGroup fx:id="cTo" />
+         </toggleGroup>
+      </RadioButton>
+       <RadioButton fx:id="cToUnderScored" layoutX="267.0" layoutY="52.0" mnemonicParsing="false" text="Underscored " toggleGroup="$cTo" />
+       <RadioButton fx:id="cToCamelCase" layoutX="147.0" layoutY="52.0" mnemonicParsing="false" text="Camel Case" toggleGroup="$cTo" />
+       <Label layoutX="14.0" layoutY="52.0" text="Convert To" />
+       <CheckBox fx:id="settingsWrapQuotation" layoutX="147.0" layoutY="168.0" mnemonicParsing="false" text="Wrap text with quotation marks" />
+       <CheckBox fx:id="settingsAlwaysTop" layoutX="687.0" layoutY="97.0" mnemonicParsing="false" text="Always top " />
+       <CheckBox fx:id="settingsCopyAfterTranslation" layoutX="147.0" layoutY="97.0" mnemonicParsing="false" text="Copy after translation" />
+       <Label layoutX="14.0" layoutY="97.0" text="Settings" />
+       <CheckBox fx:id="settingsFirstLetterIsAlwaysUppercase" layoutX="418.0" layoutY="131.0" mnemonicParsing="false" text="First letter is always uppercase" />
+       <Label layoutX="15.0" layoutY="213.0" prefHeight="21.0" prefWidth="161.0" text="Insert text to convert" />
+       <TextField fx:id="textFromTextField" layoutX="168.0" layoutY="208.0" prefHeight="31.0" prefWidth="624.0" />
+       <TextField fx:id="textToTextField" layoutX="168.0" layoutY="250.0" prefHeight="31.0" prefWidth="624.0" />
+       <Label layoutX="15.0" layoutY="255.0" prefHeight="21.0" prefWidth="161.0" text="Converted text" />
+       <CheckBox fx:id="settingsConvertToLowerCase" layoutX="418.0" layoutY="97.0" mnemonicParsing="false" text="Convert to lower case" />
+      <CheckBox fx:id="settingsFirstLetterIsAlwaysLowercase" layoutX="418.0" layoutY="168.0" mnemonicParsing="false" text="First letter is always lowercase" />
+      <CheckBox fx:id="settingsCopyAfterClickFields" layoutX="147.0" layoutY="131.0" mnemonicParsing="false" text="Copy after clicking text fields" />
+   </children>
+
+
+
+</AnchorPane>
